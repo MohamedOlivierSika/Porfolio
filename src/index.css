@@ -1,0 +1,212 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.Header{border-bottom: 1px #00000077 solid;
+  background-color: #F8F6F3;
+  width: 100vw;
+  height: 7vh;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(41, 41, 41, 0.5); /* Adjusted shadow */
+  position: fixed;
+  top: 0;
+  bottom: 50px;
+  z-index: 50;
+  
+}
+.Header ul{border: 1px rgb(255, 0, 0) hidden;
+           height: 100%;
+           }
+.Header li{display: inline-block;
+            margin: 0 4vw;
+            padding-top: 2.5vh;
+            font-size: 1.35rem;
+            font-weight: 200;
+            color: #5b6266;
+            
+            
+
+  }
+  .profilePic{padding-right: 17vw;}
+  .language{padding-left: 17vw;}
+
+
+  .Home{display: grid;
+        grid-template-columns:2fr 1fr;
+        border: 1px rgb(255, 0, 0) hidden;
+        z-index: 1;
+        position: relative;
+        background-color: #F8F6F3;
+        width: 100vw;
+        height: 100vh;}
+        
+        .text{ border: 1px rgb(51, 255, 0) hidden; 
+               display: grid;
+              text-align: center;
+              place-items: center;  
+              height: 50%;
+              align-self: center;
+             }
+        .text button{background-color: #657E4C;
+                     width: 10vw;
+                    height: 5.5vh;
+                    font-size: 1.5em;
+                    margin-top: 2.5em;
+                    color: white;
+                    box-shadow: 4px 15px 10px rgba(41, 41, 41, 0.5); /* Adjusted shadow */
+                    border: 1px rgb(0, 0, 0) hidden;
+                    border-radius: 12px;}
+        .text h1{border: 1px black hidden;
+                  font-size: 9.5em;}
+        .text p{border: 1px red hidden;
+                height: 10vh;
+                width: 35vw;
+                position: relative;
+              
+                font-size: 1.8em;
+                line-height: 4vh;
+                font-weight: 200;
+                color: rgba(0, 0, 0, 0.582);}
+
+                @media (max-width: 1280px){
+                  .text h1{font-size: 7.5em;}
+                  .text p{font-size: 1.3em !important;
+                          width: 45vw !important;
+                          line-height: 4vh }
+                  .text button{margin-top: 2.5em;}
+                }
+
+        .textColorBlue{color: #4C657E;}
+
+
+
+
+
+        .PorfolioImage {clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+                           background-image: url(./imag/shapes/africaImage.png);
+                           background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 35vw;
+                            height: 100vh;
+                            position: relative;
+                            left: 0.5vw;
+                            
+                          
+                            }
+
+.borderContainerImage{width: 35vw;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: 0px 5px 10px rgba(41, 41, 41, 0.5); /* Adjusted shadow */
+  height: 100vh;}
+                       .Home::before{
+                        content: '';
+                        position: absolute;
+                        width: 100vw;
+                        height: 3.5vh;
+                        background-color: #657e4caf; /* Color of the line */
+                        /* Position it in the middle or wherever you need */
+                        top: 35%;                        
+                        transform: rotate(25deg) scaleX(2);;  /* Add rotation if needed */
+                        z-index: -1; /* Behind the content */
+                        
+                     
+                       }
+/*-----------------------------------------------------Project 1 section ---------------------------------------------*/
+.project1{display: grid;
+  grid-template-columns:5fr 3fr;
+  border: 1px rgb(255, 0, 0) hidden;
+  border-top: 2px rgba(156, 158, 170, 0.384) solid;
+  z-index: 1;
+  position: absolute;
+  background-color: #F8F6F3;
+  width: 100vw;
+  height: 100vh;}
+                       
+
+
+   .project1::before{
+    content: '';
+    clip-path: circle(35%);
+    position: absolute;
+    margin-top: 2vh;
+    width:  60vw;
+    height: 50vh;
+    background-color: #B7BEC8;
+    z-index: -1;
+   }
+
+   .project1::after{
+    content: '';
+    clip-path: circle(34%);
+    clip-path: line();
+    position: absolute;
+       margin-top: 1vh;
+    width:  60vw;
+    height: 50vh;
+    background-color: #F8F6F3;
+/* Color of the line */
+    /* Position it in the middle or wherever you need */
+                            
+
+    z-index: -1; /* Behind the content */
+    
+ 
+   }
+   .projectTitle::after{  content: '';
+    position: absolute;
+    width: 20vw;
+    height: 3.5vh;
+    background-color: #657e4caf; /* Color of the line */
+    /* Position it in the middle or wherever you need */
+    top: 15%;                        
+    transform: rotate(-25deg) scaleX(50);;  /* Add rotation if needed */
+    z-index: -1; /* Behind the content */
+    }
+
+   .projectNumber{border: 1px black hidden;
+                  }
+   .projectNumber h2{font-size: 5em; font-weight: 200; color: #4D4D4D;
+                     position: relative;
+                     margin-top: 8vh;
+                     left: 22vw;  }
+
+   .PorfolioImageProject1{    background-image: url(./imag/shapes/Vacation\ Planner.png);
+                              width: 56vw;
+                              height: 80vh;
+                              background-color: #F8F6F3;
+                              border: 1px rgba(121, 121, 121, 0.233) solid;
+                              border-radius: 15px;
+                              background-repeat: no-repeat;
+                              background-size: contain;
+                              margin-top: 20vh;
+                              position: absolute;
+                              margin-left: 2vw;}
+
+
+    .projectTitle{border: 1px black hidden;  
+                  height: 100vh;
+                  text-align: center;    
+                  margin-right: 2vw;
+                  margin-top: 8vh;
+                  }
+    .projectTitle h3{border: 1px black hidden;
+                     font-size: 2.5em;
+                    font-weight: 100;
+                    background-color: #657E4C;
+                   color: white;
+                   padding: 15px 30px;
+                    width: 50%;
+                   margin: 0 auto;
+                   border-radius: 16px;
+                    }
+      .projectTitle p{font-size: 1.20em;
+                      line-height: 6vh;
+                      margin-top: 4vh;
+                      width: 90%;
+                      color: rgba(0, 0, 0, 0.692);
+                     }
